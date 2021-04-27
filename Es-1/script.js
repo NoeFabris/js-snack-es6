@@ -9,12 +9,11 @@ for (let i = 1; i < 6; i++) {
 console.log(bici)
 
 var nome
-var peso = 15
-
+var peso
 for (let i = 0; i < bici.length; i++) {
     let biciControllata = bici[i]
     console.log(biciControllata['peso'])
-    if (parseFloat(biciControllata['peso']) < peso) {
+    if (!peso || parseFloat(biciControllata['peso']) < peso) {
         console.log('bici leggera')
         // biciPiuleggera['peso'] = parseFloat(biciControllata['peso'])
         // biciPiuleggera['nome'] = biciControllata['nome']
