@@ -1,5 +1,5 @@
  function numGen(min, max) {
-    return num = Math.floor(Math.random() * (max - min)) + 1;
+    return num = Math.floor(Math.random() * (max - min) + 1);
 }
 function numGenDecimal(min, max) {
     return num = (Math.random() * (max - min) + 1).toFixed(2);
